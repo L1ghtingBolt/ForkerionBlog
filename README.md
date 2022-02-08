@@ -2,7 +2,7 @@
 
 Made with Astro.
 
-This is my blog. It was made using Astro Framework, Svelte and TailwindCSS.
+This is my blog. It was made using Astro Framework, Svelte and TailwindCSS.  
 DISCLAIMER: It's in Spanish.
 
 # Commands:
