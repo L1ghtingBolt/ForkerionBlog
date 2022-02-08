@@ -1,0 +1,20 @@
+---
+import Post from './Post.svelte';
+const {content} = Astro.props;
+const { title, desc, date, urlto, author } = content;
+---
+
+<html lang={content.lang || 'en'}>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+  	    <link rel="stylesheet" href={Astro.resolve("../styles/global.css")} >
+  	    <link rel="stylesheet" href={Astro.resolve("../styles/post.css")} >
+    </head>
+    
+    <body>
+        <Post {title} {desc} {date} {author} {urlto}><slot/></Post>
+    </body>
+
+</html>

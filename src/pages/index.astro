@@ -1,0 +1,29 @@
+---
+import Blog from '../components/Blog.svelte';
+let allPosts = await Astro.fetchContent('./post/*.md');
+
+allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Forkerion Blog</title>
+	<style global>
+			@import "../styles/global.css";
+	</style>
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link rel="stylesheet" href={Astro.resolve("../styles/global.css")} >
+</head>
+<body>
+	<main>
+		<header>
+			<div>
+				<img width="60" height="80" class="mx-auto my-10" src="/assets/logo.svg" alt="Astro logo">
+			</div>
+		</header>
+		<h1 class="font-bold text-3xl mb-10 text-center">Articles</h1>
+		<Blog articles={allPosts}/>
+	</main>
+</body>
+</html>

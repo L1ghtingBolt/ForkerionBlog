@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-color: #dfdfdf;
+}
+
+:root {
+	font-family: system-ui;
+	--user-font-scale: 1rem;
+	font-size: clamp(0.875rem, 0.4626rem + 1.0309vw + var(--user-font-scale), 1.125rem);
+}
+
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: #111827;
+		color: #fff;
+	}
+}
+
+@media (max-width: 600px) {
+	article {
+		border-radius: 20px !important;
+		min-width: 70vw !important;
+		max-width: min-content;
+		max-height: max-content;
+	}
+  }
