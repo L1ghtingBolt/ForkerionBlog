@@ -12,6 +12,5 @@
         <h1 class="text-5xl font-bold">{title}</h1>
         <h2 class="text-gray-500 text-lg mb-10">{author}</h2>
         <p><slot/></p>
-        
     </div>
 </div>
