@@ -4,8 +4,8 @@ export let articles;
 </script>
 
 
-<div class="flex justify-center">
+<div class="flex items-center flex-col">
 	{#each articles as article}
-		<Article title={article.title} url={article.urlto} date={article.date} content={article.desc}/>
+		<Article nsfw={article.nsfw} title={article.title} url={article.urlto} date={article.date} content={article.desc}/>
 	{/each}
 </div>

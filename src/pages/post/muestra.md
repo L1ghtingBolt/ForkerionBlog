@@ -1,11 +1,12 @@
 ---
 setup: |
   import Layout from '../../layouts/Post.astro'
-title: Astro blog!
-date: 12 Sep 2021
-urlto: 'post/hola'
-desc: Que pasaa
+title: Muestra de astro!
+date: 8 Feb 2022
+urlto: 'post/muestra'
+desc: Muestra de lo que se puede hacer usando Astro
 author: L1ghtingBolt
+nsfw: false
 ---
 Este es un post del blog, hecho en Astro.
 El blog está hecho en Svelte.
