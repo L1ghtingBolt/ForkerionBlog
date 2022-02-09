@@ -2,7 +2,7 @@
 setup: |
   import Layout from '../../layouts/Post.astro'
 title: Nueva actualización!
-date: 8 Feb 2022
+date: 9 Feb 2022
 urlto: 'post/update1'
 desc: Noticia de la nueva actualización de este blog.
 author: L1ghtingBolt
