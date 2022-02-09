@@ -1,9 +1,9 @@
 ---
 setup: |
   import Layout from '../../layouts/Post.astro'
-title: Desarrollo de Fluttwr
+title: Desarrollo de Flutter
 date: 9 Feb 2022
-urlto: 'post/muestra'
+urlto: 'post/flutter'
 desc: Muestra de lo que se puede hacer usando Astro
 author: L1ghtingBolt
 nsfw: false
